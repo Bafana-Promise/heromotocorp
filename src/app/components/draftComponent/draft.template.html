@@ -1,0 +1,51 @@
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" class="draft-header-padding-top" fxFlex="100" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column wrap" fxLayoutGap="12px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="13px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/hamBZ.svg" class="draft-content-logo">
+                <div class="grey-black-color draft-header-font-size">
+                    List of Networks</div>
+                <div class="draft-text-font-size">
+                    Draft</div>
+            </div>
+            <div class="draft-grey-line">
+            </div>
+        </div>
+        <div fxLayout="column" class="draft-table">
+            <table mat-table [dataSource]="setDataSource_1()" class="table-width-fix">
+                <tr mat-header-row *matHeaderRowDef="[&apos;code&apos;,&apos;name&apos;,&apos;zone&apos;,&apos;area&apos;,&apos;3e91f193-84dd-596e-ca25-ca2e533f6f97&apos;]"></tr>
+                <tr mat-row *matRowDef="let row; columns: [&apos;code&apos;,&apos;name&apos;,&apos;zone&apos;,&apos;area&apos;,&apos;3e91f193-84dd-596e-ca25-ca2e533f6f97&apos;];"></tr>
+
+                <ng-container matColumnDef="code">
+                    <th mat-header-cell *matHeaderCellDef>DEALER CODE</th>
+                    <td mat-cell *matCellDef="let table; let i = index;"><span routerLink="/dashboard/abhijith">{{table.code}}</span></td>
+                </ng-container>
+
+                <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef>DEALER NAME</th>
+                    <td mat-cell *matCellDef="let table; let i = index;"><span routerLink="/dashboard/abhijith">{{table.name}}</span></td>
+                </ng-container>
+
+                <ng-container matColumnDef="zone">
+                    <th mat-header-cell *matHeaderCellDef>ZONE</th>
+                    <td mat-cell *matCellDef="let table; let i = index;"><span routerLink="/dashboard/abhijith">{{table.zone}}</span></td>
+                </ng-container>
+
+                <ng-container matColumnDef="area">
+                    <th mat-header-cell *matHeaderCellDef>AREA NAME</th>
+                    <td mat-cell *matCellDef="let table; let i = index;"><span routerLink="/dashboard/abhijith">{{table.area}}</span></td>
+                </ng-container>
+
+                <ng-container matColumnDef="3e91f193-84dd-596e-ca25-ca2e533f6f97">
+                    <th mat-header-cell *matHeaderCellDef>STATUS</th>
+                    <td mat-cell *matCellDef="let table; let i = index;">
+                        <div class="{{table.status}} table-border-radius">
+                        </div>
+                    </td>
+                </ng-container>
+            </table>
+            <mat-paginator [length]="setDataSource_1()" [pageSizeOptions]="[5, 10, 25, 100]">
+            </mat-paginator>
+
+        </div>
+    </div>
+</div>

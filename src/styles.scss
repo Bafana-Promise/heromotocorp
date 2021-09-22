@@ -1,0 +1,268 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+$lightGreyColor: #c0c1c5;
+$skyBlueColor: #f7f9ff;
+$darkNavyColor: #192235;
+$darkGreyColor: #637280;
+$whiteColor: #ffffff;
+$redColor: red;
+$darkBlue: #303030;
+$greyBlackColor: #707070;
+$greenColor: #3acba0;
+$blackColor: black;
+$orangeColor: #ffab1e;
+$lightBlue: #ecf1ff;
+body{
+    font-family: sans-serif;
+}
+// dashBoard SCSS
+.tool-bar-logo{
+    width: 170px;
+    height: 46.2px;
+}
+.tool-height{
+    height: 9vh;
+}
+.cursor{
+    cursor: pointer;
+}
+.tool-bar-input{
+}
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    color: #d9d9e2 !important;
+    left: 9px !important;
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: rgba(0, 0, 0, 0) !important; 
+}
+.mat-form-field-appearance-legacy .mat-form-field-prefix .mat-icon, .mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon {
+    position: relative !important;
+    top: 7px !important;
+    color: lightgrey !important;
+}
+.tool-bar-border-right{
+    border-right: 2px solid #d9d9e2;
+    height: 48px;
+}
+.tool-bar-icon{
+    font-size: 29px;
+    color: #c0c1c5;
+}
+.side-nav-main-content{
+    height: 91vh; 
+    background: $skyBlueColor;
+}
+.sideNavWidth{
+    width: 14%; 
+    background: $darkNavyColor;
+}
+.sideNavImg{
+    width: 50px;
+    height: 50px;
+    padding-top: 24px;
+}
+.sideNavUsername{
+    font-size: 16px;
+    color: $darkGreyColor;
+}
+.side-nav-header{
+    font-size: 18px;
+}
+.dark-color-grey{
+    color: $darkGreyColor;
+}
+.side-nav-white-color{
+    color: $whiteColor;
+}
+.side-nav-icon{
+    width: 30.7px;
+    height: 30.7px;
+}
+.grey-black-color{
+    color: $greyBlackColor;
+}
+.active{
+    background: red;
+    padding: 5px 20px;
+    border-radius: 14px;
+    text-align: center;
+    color: white !important;
+}
+.side-nav-text{
+    padding: 5px 34px;
+    border-radius: 14px;
+    text-align: center;
+}
+//Draft SCSS
+.draft-header-padding-top{
+    padding-top: 49px;
+}
+.draft-content-logo{
+    width: 27.2px;
+    height: 29.3px;
+}
+.draft-header-font-size{
+    font-size: 24px;
+}
+.draft-text-font-size{
+    font-size: 13px;
+    position: relative;
+    top: 3px;
+}
+.draft-grey-line{
+    border-bottom: 2px solid #ecf1ff;
+}
+.draft-table-green-color{
+    background: #3acba0;
+}
+.draft-table-black-color{
+    background: black;
+}
+.draft-table-orange-color{
+    background: #ffab1e;
+}
+.draft-table-red-color{
+    background: #ed1c24;
+}
+.table-border-radius{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.draft-table{
+   td.mat-cell:last-child {
+    
+    border-radius: 0px 10px 10px 0px;
+  }
+  .mat-header-row, [mat-header-row]{
+      background: #f7f9ff !important;
+  }
+  .mat-table thead, .mat-table tbody, .mat-table tfoot,  mat-row, mat-footer-row, [mat-row], [mat-footer-row], .mat-table-sticky {
+    background: white !important;
+    cursor: pointer;
+  }
+  .mat-row:hover{
+        background: black !important;
+        color: white !important;
+  }
+   td.mat-cell:hover{
+    color: white !important;
+  }
+
+  .mat-paginator-container {
+    background: #f7f9ff !important;
+}
+  td.mat-cell:first-child {
+    border-radius: 10px 0px 0px 10px;
+  }
+  table {
+  border-spacing: 0 7px !important;
+  }
+  .mat-table {
+    background: #f7f9ff !important;
+  }
+}
+// Abhijith SCSS
+.abhijith-subheader-font-size{
+    font-size: 15px;
+    color: #707070;
+}
+.abhijith-green-circle{
+    width: 10px;
+    height: 10px;
+    background-color: #3acba0;
+    border-radius: 50%;
+}
+.abhijith-background-colorred{
+    background-color: red;
+    width: 42.8px;
+    height: 6.2px;
+    border-radius: 3px;
+}
+.abhijith-background-colorblack{
+    width: 42.8px;
+    height: 7.2px;
+    background-color: black;
+    border-radius: 3px;
+}
+.abhijith-progress-37red{
+    width: 19.9px;
+    height: 6.2px;
+    margin: 0 28.9px 0 0;
+    background-color: #ed1c24;
+    border-radius: 3px 0px 0px 3px;
+}
+.abhijith-position{
+    position: relative;
+    bottom: 6.9px;
+}
+.abhijith-transperant-img{
+    height: 2px;
+}
+.abhijith-card-textcolor{
+    color: $greyBlackColor;
+}
+.card-border-separent{
+    border: 1px solid #ececec;
+}
+.card-map-image{
+    width: 431px;
+    height: 292px;
+}
+.card-dotted-border-separent{
+    border-left: 1px dotted black;
+    height: 61px;
+}
+.card-text-header{
+    color: #080808;
+    font-size: 17px;
+}
+//Service SCSS
+.service-dateicon{
+    font-size: 22px;
+    color: #929292;
+}
+.service-my-table{
+   td.mat-cell {
+ /* row padding */
+  padding: 0px 0; 
+  }
+}
+.service-upload-icon{
+    color: #3acba0;
+}
+.grey-background-tr{
+    background-color: #fafafa;
+}
+.serv-table-txt-lightgrey-color{
+    color: #afafaf;
+}
+.serv-table-txt-fontsize{
+    font-size: 10px;
+}
+.service-my-second-table{
+    td.mat-cell {
+ border-bottom: 2px dotted black;
+}
+
+td.mat-cell:first-child {
+  border-right: 1px solid black;
+}
+.uploadIcon{
+    color: #3acba0;
+}
+
+table {
+  border-spacing: 0 8px !important;
+} 
+}
+.service-button-container{
+    border-radius: 34px !important;
+    background: #f1f1f1;
+    width: 127.7px;
+}
+.service-margin-top-btn{
+    margin-top: 12px;
+}

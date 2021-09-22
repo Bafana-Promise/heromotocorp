@@ -1,0 +1,70 @@
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxFill>
+  <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" class="tool-height" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" class="tool-height" fxFlex="98" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="54px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/neutrinos.png" class="tool-bar-logo"><img imgSrc="Web/Icons/hamBurger.svg" (click)="sideNavToggle()" class="cursor"></div>
+              <mat-form-field class="toolBarInput" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                <input matInput placeholder="Search here" [required]="false">
+                <mat-icon matPrefix>search</mat-icon>
+              </mat-form-field>
+            </div>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="12px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+              <div class="tool-bar-border-right">
+              </div>
+              <mat-icon class="tool-bar-icon">power_settings_new</mat-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <mat-sidenav-container class="side-nav-main-content">
+      <mat-sidenav #sidenav class="sideNavWidth" [mode]="&apos;side&apos;" [position] [opened]="true">
+        <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxFlex="80" fxLayoutGap="32px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" fxLayoutGap="10px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/manisuresh.png" class="sideNavImg">
+              <div class="sideNavUsername">
+                Manisuresh</div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutGap="11px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutGap="6px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/speed.svg" class="side-nav-icon">
+                <div class="side-nav-header dark-color-grey">
+                  Dashboard</div>
+              </div>
+              <div fxLayout="column wrap" fxLayoutGap="15px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="row wrap" fxLayoutGap="6px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/network.svg" class="side-nav-icon">
+                  <div class="side-nav-header side-nav-white-color">
+                    Networks</div>
+                </div>
+                <div fxLayout="column wrap" fxLayoutGap="15px" fxLayoutAlign="center end" [fxShow]="true" [fxHide]="false">
+                  <div fxLayout="column wrap" fxLayoutGap="12px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                    <div class="side-nav-text dark-color-grey">
+                      All</div>
+                    <div class="active dark-color-grey">
+                      <span class="cursor" routerLink="/dashboard/draft" routerLinkActive="active">Draft</span>
+                    </div>
+                    <div class="side-nav-text dark-color-grey">
+                      Submitted</div>
+                  </div>
+                </div>
+              </div>
+              <div fxLayout="row wrap" fxLayoutGap="15px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/settings.svg" class="side-nav-icon">
+                <div class="dark-color-grey side-nav-header">
+                  Settings</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-sidenav>
+      <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column wrap" fxFlex="95" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </mat-sidenav-container>
+  </div>
+</div>
