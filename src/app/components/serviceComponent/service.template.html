@@ -40,7 +40,55 @@
             <div fxLayout="row wrap" style="background: white;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                     <mat-card>
-                        <mat-card-content></mat-card-content>
+                        <mat-card-content>
+                            <div fxLayout="column wrap" fxLayoutGap="24px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                                <div fxLayout="column wrap" fxLayoutGap="19px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                                    <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+                                        <div>
+                                            1</div>
+                                        <div class="card-number-grey-circle">
+                                            2
+                                            <div class="card-number-red-border-bottom">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            3</div>
+                                        <div>
+                                            4</div>
+                                        <div>
+                                            5</div>
+                                    </div>
+                                    <div class="card-numbers-border-bottom">
+                                    </div>
+                                </div>
+                                <div fxLayout="column wrap" fxLayoutGap="30px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                                    <div>
+                                        INFRASTRUCTURE</div><img imgSrc="Web/Icons/market.png" style=" width: 234px;  height: 139.2px;" class="card-img-size.market-container">
+                                </div>
+                                <div fxLayout="column wrap" fxLayoutGap="10px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                                    <div>
+                                        SUB - CATEGORY</div>
+                                    <div>
+                                        Vehicle Receiving Area</div><img imgSrc="Web/Icons/dots.svg">
+                                    <div fxLayout="row wrap" class="card-redline-margin-top" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                                        <div class="card-border-red">
+                                        </div>
+                                        <div class="card-border-black">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div fxLayout="column wrap" fxLayoutGap="14px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                                    <div fxLayout="row wrap" fxLayoutGap="12px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/download.svg" class="card-download-img">
+                                        <div class="card-font-size-container">
+                                            Save as Draft</div>
+                                    </div>
+                                    <div fxLayout="row wrap" fxLayoutGap="12px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/correct.svg" class="card-download-img">
+                                        <div class="card-font-size-container">
+                                            Submit &amp; exit</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-card-content>
 
                         <mat-card-actions></mat-card-actions>
                     </mat-card>
@@ -122,7 +170,11 @@
                             </ng-container>
                         </table>
                     </div>
-                    <div fxLayout="row wrap" class="service-margin-top-btn" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false"><button mat-raised-button class="service-button-container">Previous</button><button mat-raised-button class="service-button-container" color="warn">Next</button></div>
+                    <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                        <div fxLayout="column wrap" fxFlex="95" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                            <div fxLayout="row wrap" class="service-margin-top-btn" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false"><button mat-raised-button class="service-button-container">Previous</button><button mat-raised-button class="service-button-container" color="warn">Next</button></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

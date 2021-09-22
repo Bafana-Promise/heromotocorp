@@ -220,6 +220,44 @@ body{
     font-size: 17px;
 }
 //Service SCSS
+.card-numbers-border-bottom{
+    border-bottom: 1px solid #ececec;
+}
+.card-number-grey-circle{
+    border-radius: 50%;
+    border: 2px solid #707070;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
+.card-number-red-border-bottom{
+    width: 20px;
+    border-bottom: 2px solid red;
+    position: relative;
+    top: 22px;
+}
+.card-img-size.market-container{
+    width: 234px;
+    height: 139.2px;
+}
+.card-border-red{
+  width: 99px;
+  border: solid 1px #ed1c24;
+}
+.card-border-black{
+    width: 242px;
+    border: solid 1px #707070;
+}
+.card-redline-margin-top{
+    margin-top: 12px;
+}
+.card-download-img{
+    width: 47.7px;
+    height: 47.7px;
+}
+.card-font-size-container{
+    font-size: 20px;
+}
 .service-dateicon{
     font-size: 22px;
     color: #929292;
